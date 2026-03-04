@@ -1,0 +1,65 @@
+{
+  "name": "@ricardosohn/capacitor-device-time-settings",
+  "version": "1.0.1",
+  "description": "Capacitor Android plugin to check, observe, and open automatic Date & Time settings.",
+  "license": "MIT",
+  "author": "Ricardo Sohn",
+  "homepage": "https://github.com/ricardosohn/capacitor-device-time-settings#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardosohn/capacitor-device-time-settings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricardosohn/capacitor-device-time-settings/issues"
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "android",
+    "time",
+    "timezone",
+    "date",
+    "settings",
+    "offline"
+  ],
+  "type": "module",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "android/src/main/",
+    "android/build.gradle",
+    "android/settings.gradle",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@capacitor/core": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  }
+}
