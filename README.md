@@ -1,3 +1,5 @@
+[![Publish npm package](https://github.com/ricardosohn/capacitor-device-time-settings/actions/workflows/publish.yml/badge.svg)](https://github.com/ricardosohn/capacitor-device-time-settings/actions/workflows/publish.yml)
+
 # @ricardosohn/capacitor-device-time-settings
 
 Native Capacitor plugin to read and monitor automatic date/time settings on Android, with a helper to open the device Date & Time settings screen.
