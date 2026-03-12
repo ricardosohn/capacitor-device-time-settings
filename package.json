@@ -1,6 +1,6 @@
 {
   "name": "@ricardosohn/capacitor-device-time-settings",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Capacitor Android plugin to check, observe, and open automatic Date & Time settings.",
   "license": "MIT",
   "author": "Ricardo Sohn",

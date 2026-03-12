@@ -37,7 +37,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.capacitorjs:core:$capacitorAndroidVersion"
+    compileOnly "com.capacitorjs:core:$capacitorAndroidVersion"
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
     testImplementation "junit:junit:$junitVersion"
 }
